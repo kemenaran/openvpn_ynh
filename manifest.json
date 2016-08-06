@@ -9,7 +9,8 @@
   "url": "http://openvpn.net",
   "maintainer": {
     "name": "kload",
-    "email": "kload@kload.fr"
+    "email": "kload@kload.fr",
+    "url": "https://github.com/YunoHost-Apps/openvpn_ynh"
   },
   "multi_instance": "false",
   "services": [
