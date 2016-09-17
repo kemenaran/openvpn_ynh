@@ -24,7 +24,7 @@ if [[ ! -c /dev/net/tun ]]; then
 fi
 
 # Find network interface (usually eth0/1 or wlan0)
-iface=$(sudo cat /etc/yunohost/interface)
+iface=$(sudo route | grep '^default' | grep -o '[^ ]*$')
 
 # Check port availability
 sudo yunohost app checkport 1194
